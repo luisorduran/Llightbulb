@@ -3,27 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://www.w3schools.com/js/pic_bulbon.gif">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Light Bulb</title>
 </head>
 
 <body>
-    <h2>Turn on/off the light</h2>
 
-    <p>Changing HTML atributes with JS</p>
+    <h2>Changing HTML attributes with JS</h2>
 
-    <button onclick="lightbulbOnOff(true)">Turn on the
-        light</button>
+    <p>Turn on/off the light</p>
 
-    <img id="lightbulb" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+    <div class="container">
 
-    <button onclick="lightbulbOnOff(false)">Turn Off the
-        light</button>
+        <img id="lightbulb" src="https://www.w3schools.com/js/pic_bulboff.gif" width="100">
 
+        <div>
+            <button onclick="lightbulbOnOff(true)">
+                Turn on the light
+            </button>
+
+            <button onclick="lightbulbOnOff(false)">
+                Turn off the light
+            </button>
+        </div>
+
+    </div>
     <script src="./index.js"></script>
+
 </body>
 
 </html>
